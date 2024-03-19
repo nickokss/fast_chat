@@ -5,6 +5,7 @@ class Message():
     def __init__(self, user, text):
         self.user = user
         self.text = text
+        
 def main(page:ft.Page):
     user_id = randint(10000, 99999) 
     chat = ft.Column()
