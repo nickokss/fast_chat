@@ -1,4 +1,4 @@
-# chat_python
+# Fast chat
 * Chat creado con python y la libreria flet.
 * Se ejecuta con:
 ```sh
