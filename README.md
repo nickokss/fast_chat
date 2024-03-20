@@ -5,6 +5,12 @@ npm init -y
 npm install express
 npm install socket.io
 ```
+
+* Ejecutar la aplicación:
+```
+node src/server.js
+```
+* Estructura del proyecto
 ```
 fast_chat/
 │
