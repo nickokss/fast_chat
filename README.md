@@ -5,6 +5,7 @@ npm init -y
 npm install express
 npm install socket.io
 ```
+```
 fast_chat/
 │
 ├── node_modules/                   # Directorio de módulos de Node.js (creado por npm)
@@ -27,3 +28,4 @@ fast_chat/
 ├── package.json                    # Configuración del proyecto y dependencias de npm
 ├── package-lock.json               # Bloqueo de versiones de dependencias para asegurar compatibilidad
 └── README.md                       # Documentación inicial del proyecto
+```
