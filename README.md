@@ -14,24 +14,31 @@ node src/server.js
 ```
 fast_chat/
 │
-├── node_modules/                   # Directorio de módulos de Node.js (creado por npm)
+├── node_modules/
+│   └── (dependencias de npm)
 │
-├── public/                         # Carpeta para archivos estáticos accesibles al cliente
-│   ├── css/                        # Hojas de estilo CSS
-│   │   └── main.css                # Estilo principal
-│   ├── js/                         # Código JavaScript del lado del cliente
-│   │   └── chat.js                 # Lógica del chat del lado del cliente
-│   └── index.html                  # Página principal de la aplicación de chat
+├── public/
+│   ├── css/
+│   │   └── estilos.css         # Estilos CSS para tu frontend
+│   │
+│   ├── js/
+│   │   └── chat.js             # Lógica de JavaScript para el frontend
+│   │
+│   └── index.html              # Página principal del chat (cliente)
 │
-├── src/                            # Código fuente del lado del servidor
-│   ├── routes/                     # Rutas de tu aplicación
-│   │   └── index.js                # Archivo de rutas principal
-│   ├── controllers/                # Controladores para manejar la lógica de negocio
-│   ├── models/                     # Modelos de datos (si estás utilizando una base de datos)
-│   └── server.js                   # Punto de entrada del servidor y configuración de socket.io
+├── src/
+│   ├── controllers/            # Controladores para manejar la lógica específica
+│   │   └── chatController.js
+│   │
+│   ├── models/                 # Modelos de datos (si decides interactuar con una base de datos)
+│   │   └── userModel.js
+│   │
+│   ├── routes/                 # Rutas para tu aplicación web
+│   │   └── chatRoutes.js
+│   │
+│   └── server.js               # Archivo principal del servidor
 │
-├── .gitignore                      # Archivos y carpetas ignorados por Git (node_modules, .env, etc.)
-├── package.json                    # Configuración del proyecto y dependencias de npm
-├── package-lock.json               # Bloqueo de versiones de dependencias para asegurar compatibilidad
-└── README.md                       # Documentación inicial del proyecto
+├── .gitignore                  # Archivos y carpetas ignoradas por git
+├── package.json                # Configuración del proyecto y dependencias
+└── README.md                   # Documentación del proyecto
 ```
